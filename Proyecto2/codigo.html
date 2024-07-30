@@ -85,6 +85,13 @@
         color: inherit !important;
         text-decoration: none !important;
       }
+
+    .social-logos img {
+        margin-right: 30px; /* Mucho más espacio horizontal entre los logos */
+        margin-left: 30px;
+        width: 50px; /* Cambia el valor según el tamaño deseado */
+        height: 50px; /* Cambia el valor según el tamaño deseado */
+      }
       @media only screen and (min-width: 481px) and (max-width: 599px) {
         table[class=wrapper], table[class=main_table] {
           width: 100% !important;
@@ -112,11 +119,20 @@
           width: 100% !important;
           height: auto !important;
         }
+        img[class="social-img"] {
+            width: 50% !important; /* Ajusta este valor según sea necesario */
+            height: auto !important;
+        }
       }
       @media only screen and (max-width: 480px) {
         table[class=wrapper], table[class=main_table] {
           width: 100% !important;
         }
+        img[class="social-img"] {
+            width: 50% !important; /* Ajusta este valor según sea necesario */
+            height: auto !important;
+        }
+
         td[class=pad_side] {
           padding-left: 14px !important;
           padding-right: 14px !important;
@@ -145,7 +161,7 @@
         font-family: Montserrat, Arial, sans-serif;
         font-size: 17px; /* Tamaño actualizado */
         font-weight: 900; /* Extrabold */
-        color: #4a6f5b;
+        color: #ffffff;
         text-align: center;
         padding-top: 40px; /* Mucho espacio arriba */
         padding-bottom: 25px; /* Espacio debajo */
@@ -160,7 +176,7 @@
   <!-- Imagen principal -->
   <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper" style="table-layout:fixed;">
     <tr>
-      <td align="center" valign="top"><a href="https://www.yvesrocher.cl/rostro/limpieza-facial.html"></a><img class="full_img" src="https://raw.githubusercontent.com/olguitab/Proyecto/main/Proyecto2/1.jpg" width="650" height="618" style="display:block;border:none;max-width:650px;max-height:618px;" /></td>
+      <td align="center" valign="top"><a href="https://www.yvesrocher.cl/rostro/limpieza-facial.html"><img class="full_img" src="https://raw.githubusercontent.com/olguitab/Proyecto/main/Proyecto2/1.jpg" width="650" height="618" style="display:block;border:none;max-width:650px;max-height:618px;" /></a></td>
     </tr>
   </table>
 
@@ -174,7 +190,7 @@
   <!-- Tercera imagen -->
   <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="wrapper" style="table-layout:fixed;">
     <tr>
-      <td align="center" valign="top"><a href="https://www.yvesrocher.cl/rostro/lineas/pure-menthe.html"></a><img class="full_img" src="https://raw.githubusercontent.com/olguitab/Proyecto/main/Proyecto2/3.jpg" width="650" height="608" style="display:block;border:none;max-width:650px;max-height:608px;" /></td>
+      <td align="center" valign="top"><a href="https://www.yvesrocher.cl/rostro/lineas/pure-menthe.html"><img class="full_img" src="https://raw.githubusercontent.com/olguitab/Proyecto/main/Proyecto2/3.jpg" width="650" height="608" style="display:block;border:none;max-width:650px;max-height:608px;" /></a></td>
     </tr>
   </table>
 
@@ -193,35 +209,29 @@
   </table>
 
   <!-- Sección de redes sociales -->
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff">
-        <tr>
-        <td align="center">
-            <table width="650" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff">
-            <tr>
-                <td align="center">
-                <table class="social-logos" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
-                    <tr>
-                    <!-- Ajustamos el ancho de las celdas para que las imágenes ocupen el espacio completo -->
-                    <td style="text-align:right; width:50%;">
-                        <!-- Imagen de Instagram, ajustamos el tamaño -->
-                        <a href="https://www.instagram.com/yvesrocher_cl/?hl=es" target="_blank">
-                        <img src="https://raw.githubusercontent.com/olguitab/Proyecto/main/Proyecto2/9.png" width="325" height="325" border="0" />
-                        </a>
-                    </td>
-                    <td style="text-align:left; width:50%;">
-                        <!-- Imagen de Facebook, ajustamos el tamaño -->
-                        <a href="https://web.facebook.com/yvesrocherchile/?locale=es_LA&_rdc=1&_rdr" target="_blank">
-                        <img src="https://raw.githubusercontent.com/olguitab/Proyecto/main/Proyecto2/10.png" width="325" height="325" border="0" />
-                        </a>
-                    </td>
-                    </tr>
-                </table>
-                </td>
-            </tr>
-            </table>
-        </td>
-        </tr>
-    </table>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#A6D4D1">
+    <tr>
+      <td align="center">
+        <table width="650" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#A6D4D1">
+          <tr>
+            <td class="social-section">
+              SÍGUENOS EN NUESTRAS REDES
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <table class="social-logos" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td><a href="https://web.facebook.com/yvesrocherchile/?locale=es_LA&_rdc=1&_rdr" target="_blank"><img src="https://raw.githubusercontent.com/olguitab/Proyecto/main/Proyecto2/10.png" width="24" height="24" border="0" /></a></td>
+                  <td><a href="https://www.instagram.com/yvesrocher_cl/?hl=es" target="_blank"><img src="https://raw.githubusercontent.com/olguitab/Proyecto/main/Proyecto2/9.png" width="24" height="24" border="0" /></a></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 
   <!-- Footer -->
   <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff">
